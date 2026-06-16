@@ -1,0 +1,62 @@
+# Node
+node_modules/
+.pnp/
+.pnp.js
+
+# Next.js build output
+.next/
+.next/cache/
+out/
+build/
+
+# Production
+dist/
+coverage/
+.nyc_output/
+
+# Environment files
+.env
+.env.*.local
+.env.local
+!/.env.example
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+*.log
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Editors and IDEs
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# Caches
+.cache/
+.parcel-cache/
+/.turbo/
+
+# TypeScript
+*.tsbuildinfo
+
+# Testing
+.jest/
+.vitest/
+coverage/
+
+# Misc
+.eslintcache
+.DS_Store
+.history/
+
+# Sensitive or local assets
+public/static/uploads/
+secrets.env
+secret.key
+

@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --navy: #0F1E35;
+  --orange: #E8650A;
+  --orange-hover: #CF5408;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #ffffff;
+  color: #1e293b;
+  font-family: var(--font-sora), Sora, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 18px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* Form fields */
+.form-input, .form-textarea {
+  background-color: #ffffff !important;
+  border-color: #cbd5e1 !important;
+  color: #1e293b !important;
+  font-size: 1rem !important;
+}
+
+input, textarea {
+  background-color: #ffffff !important;
+  border: 1px solid #cbd5e1 !important;
+  color: #1e293b !important;
+  font-size: 1rem !important;
+}
+
+input:focus, textarea:focus {
+  border-color: #E8650A !important;
+  box-shadow: 0 0 0 2px rgba(232,101,10,0.2) !important;
+  outline: none !important;
+}
+
+input::placeholder, textarea::placeholder {
+  color: #94a3b8 !important;
+}
