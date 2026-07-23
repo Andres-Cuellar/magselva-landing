@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import { Sora } from 'next/font/google'
 import Script from 'next/script'
+import CookiebotConsent from '@/components/CookiebotConsent'
 import './globals.css'
 
 const sora = Sora({
@@ -20,6 +21,9 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className={sora.variable}>
+      <head>
+        <CookiebotConsent />
+      </head>
       <body className="font-sans">
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=AW-786881918"
