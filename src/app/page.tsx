@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import { Phone, MessageSquare } from 'lucide-react'
 import Hero from '@/components/Hero'
 import TrustBar from '@/components/TrustBar'
@@ -95,6 +96,11 @@ export default function Page() {
 
           <p className="text-slate-500 text-sm">
             &copy; {new Date().getFullYear()} Mag Selva Inc. All rights reserved. Serving Atlanta &amp; Surrounding Areas.
+          </p>
+          <p className="text-xs mt-3">
+            <Link href="/privacy" className="text-slate-400 hover:text-[#E8650A] transition-colors underline underline-offset-2">
+              Privacy Policy
+            </Link>
           </p>
           <p className="text-slate-600 text-xs mt-2">
             Developed by{' '}
